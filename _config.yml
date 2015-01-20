@@ -1,7 +1,7 @@
 # Site settings
 title: Timur T. Projects House
 #email: your-email@domain.com
-description: Projects House
+#description: Projects House
 baseurl: "/projects"
 url: "http://famer.github.io/" # the base hostname & protocol for your site
 #twitter_username: famer	
