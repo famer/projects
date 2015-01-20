@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% capture image %}
+![]({{ site.baseurl }}/assets/icons/{{page.image}})
+{% endcapture %}
 <div class="post">
 
   <header class="post-header">
@@ -8,6 +11,8 @@ layout: default
   </header>
 
   <article class="post-content">
+    {{ page.description }}
+    {{ image | markdownify }}
     {{ content }}
   </article>
 
