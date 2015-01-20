@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% capture image %}
+![](/assets/icons/{{page.image}})
+{% endcapture %}
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <article class="post-content">
+    {{ page.description }}
+    {{ image | markdownify }}
+    {{ content }}
+  </article>
+
+</div>
