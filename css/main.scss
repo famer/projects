@@ -51,12 +51,28 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 ul.page-list {
-list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	list-style-type: none;
+	width: 510px;
 }
+ul.page-list:after {
+    content:'';
+    width: 100%;
+    display: inline-block;
+}
+
+ul.page-list li a {
+	display: block;
+}
+
 ul.page-list li {
-display: inline;
+	padding-left: 20px;
+	display: inline;
+	float:left;
 }
 
 ul.page-list li img {
-width: 150px;
+	width: 150px;
 }
