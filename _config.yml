@@ -17,3 +17,4 @@ defaults:
     values:
       type: app
       layout: "app"
+
