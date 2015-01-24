@@ -7,12 +7,12 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <a href="{{ apge.applesoreLink }}"><h1 class="post-title">{{ page.title }}</h1></a>
+    <a href="{{ page.appstoreLink }}"><h1 class="post-title">{{ page.title }}</h1></a>
   </header>
 
   <article class="post-content">
     {{ page.description }}
-    <a href="{{ page.applesoreLink }}">{{ image | markdownify }}</a>
+    <a href="{{ page.appstoreLink }}">{{ image | markdownify }}</a>
     {{ content }}
   </article>
 
