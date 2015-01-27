@@ -2,7 +2,7 @@
 layout: default
 ---
 {% capture image %}
-![]({{ site.baseurl }}/assets/icons/{{page.image}})
+![{{ page.title }}]({{ site.baseurl }}/assets/icons/{{page.image}})
 {% endcapture %}
 <div class="post">
 
@@ -10,7 +10,7 @@ layout: default
     <a href="{{ page.appstoreLink }}"><h1 class="post-title">{{ page.title }}</h1></a>
   </header>
 
-  <article class="post-content">
+  <article class="post-content app">
     {{ page.description }}
     <a href="{{ page.appstoreLink }}">{{ image | markdownify }}</a>
     {{ content }}
