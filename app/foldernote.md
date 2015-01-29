@@ -4,4 +4,5 @@ description: Folder Note is utility tool that lets you make annotations for fold
 image: folder-note.png
 tags: iOS
 appstoreLink: https://itunes.apple.com/us/app/pro-places/id948166579 
+weight: 3
 ---

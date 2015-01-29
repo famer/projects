@@ -4,6 +4,7 @@ description: Spotty Finder is navigation tool that lets you find your car, capmi
 image: spottyfinder_big_icon.png
 tags: iOS
 appstoreLink: https://itunes.apple.com/us/app/spotty-finder/id867263619
+weight: 4
 ---
 
 

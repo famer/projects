@@ -6,16 +6,18 @@ layout: default
   <h1 class="page-heading">iOS</h1>
 
   <ul class="page-list">
-    {% assign pages = site.pages | where:"type","app" %}
+    {% assign pages = site.pages | where:"type","app" | sort:"weight" | reverse %}
     {% for page in pages %}
       <li>
-
+		
 	<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
 		<h2>
 		{{ page.title }}
 		</h2>
-		<img src="{{ site.baseurl }}/assets/icons/{{page.image}}"/>
+		<img class="app-image" src="{{ site.baseurl }}/assets/icons/{{page.image}}"/>
 	</a>
+	<br />
+	<a href="{{ page.appstoreLink }}"><img src="{{ site.baseurl }}/assets/App Store Badge/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
       </li>
     {% endfor %}
   </ul>
