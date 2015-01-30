@@ -3,6 +3,15 @@ layout: default
 ---
 
 <div class="home">
+<h1 class="page-heading">Current project:</h1>
+<a href="{{ site.baseurl }}/app/places.html"><h2>Places</h2></a>
+<center>
+	<a href="{{ site.baseurl }}/app/places.html">
+<img class="app-image rounded shadow" style="width:300px;"src="{{ site.baseurl }}/assets/icons/pro-places.png"/>
+</a><br /><br />
+<p style="width:500px">description: Places is navigation tool that lets you navigate to your places easily for everyone</p>
+</center>
+
   <h1 class="page-heading">iOS</h1>
 
   <ul class="page-list">
@@ -14,7 +23,7 @@ layout: default
 		<h2>
 		{{ page.title }}
 		</h2>
-		<img class="app-image" src="{{ site.baseurl }}/assets/icons/{{page.image}}"/>
+		<img class="app-image" src="{{ site.baseurl }}/assets/icons/small_150/{{page.image}}"/>
 	</a>
 	<br />
 	<a href="{{ page.appstoreLink }}"><img style="width:135px;height:40px;" src="{{ site.baseurl }}/assets/App Store Badge/Download_on_the_App_Store_Badge_US-UK_135x40.png" /></a>
