@@ -15,6 +15,7 @@ layout: microformat
     {{ page.description }}
     <a href="{{ page.appstoreLink }}" property="schema:image">{{ image | markdownify }}</a>
 	<a property="schema:url" content="{{ page.appstoreLink }}" href="{{ page.appstoreLink }}"><img src="{{ site.baseurl }}/assets/App Store Badge/Download_on_the_App_Store_Badge_US-UK_135x40.png" /></a>
+	<br />
     {{ content }}
 <span property="dc:creator" content="http://famer.github.io/about">Timur Tatarshaov</span>
   </article>

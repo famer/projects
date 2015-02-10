@@ -8,7 +8,7 @@ weight: 2
 ---
 
 
-##Materials:
+###Materials:
 
 * [Sources](https://github.com/famer/Pro-Places/) ([LICENSE](https://github.com/famer/Pro-Places/blob/public/LICENSE))
 * [Documentation PDF (PDF 3.4Mb)](/downloads/english-places-docs.pdf)
