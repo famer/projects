@@ -1,20 +1,22 @@
 ---
-layout: default
+layout: microformat
 ---
 {% capture image %}
 ![{{ page.title }}]({{ site.baseurl }}/assets/icons/{{page.image}})
 {% endcapture %}
-<div class="post">
+<div class="post" typeof="schema:Product gr:ProductOrServiceModel" itemid="#product"  about="{{ page.url }}">
 
   <header class="post-header">
-    <a href="{{ page.appstoreLink }}"><h1 class="post-title">{{ page.title }}</h1></a>
+    <a href="{{ page.appstoreLink }}"><h1 property="gr:name" class="post-title">{{ page.title }}</h1></a>
   </header>
 
   <article class="post-content app">
+	<span property="dc:title">{{ page.title }}</span>
     {{ page.description }}
-    <a href="{{ page.appstoreLink }}">{{ image | markdownify }}</a>
-	<a href="{{ page.appstoreLink }}"><img src="{{ site.baseurl }}/assets/App Store Badge/Download_on_the_App_Store_Badge_US-UK_135x40.png" /></a>
+    <a href="{{ page.appstoreLink }}" property="schema:image">{{ image | markdownify }}</a>
+	<a property="schema:url" content="{{ page.appstoreLink }}" href="{{ page.appstoreLink }}"><img src="{{ site.baseurl }}/assets/App Store Badge/Download_on_the_App_Store_Badge_US-UK_135x40.png" /></a>
     {{ content }}
+<span property="dc:creator" content="http://famer.github.io/about">Timur Tatarshaov</span>
   </article>
 
 </div>
