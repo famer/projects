@@ -7,4 +7,18 @@ appstoreLink: https://itunes.apple.com/us/app/spotty-finder/id867263619
 weight: 4
 ---
 
+Achivements:
+
+Increase up to 300 per day:
+![lifetime]({{ site.baseurl }}/assets/Related/Spotty Finder/aLifetime.png)
+
+New:
+![new]({{ site.baseurl }}/assets/Related/Spotty Finder/aNew.png)
+
+Reviews:
+![review]({{ site.baseurl }}/assets/Related/Spotty Finder/aReview3.png)
+
+Localized to 8 languages:
+![translation]({{ site.baseurl }}/assets/Related/Spotty Finder/aTranslated.png)
+
 

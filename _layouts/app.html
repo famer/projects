@@ -2,7 +2,7 @@
 layout: microformat
 ---
 {% capture image %}
-![{{ page.title }}]({{ site.baseurl }}/assets/icons/{{page.image}}){:.rounded .shadow}
+![{{ page.title }}]({{ site.baseurl }}/assets/icons/{{page.image}}){:.rounded .shadow width="300px"}
 {% endcapture %}
 <div class="post" typeof="schema:Product gr:ProductOrServiceModel" itemid="#product"  about="{{ page.url }}">
 
@@ -13,8 +13,12 @@ layout: microformat
   <article class="post-content app">
 	<span property="dc:title">{{ page.title }}</span>
     {{ page.description }}
+<br /><br />
+<center>
     <a href="{{ page.appstoreLink }}" property="schema:image">{{ image | markdownify }}</a>
+
 	<a property="schema:url" content="{{ page.appstoreLink }}" href="{{ page.appstoreLink }}"><img src="{{ site.baseurl }}/assets/App Store Badge/Download_on_the_App_Store_Badge_US-UK_135x40.png" /></a>
+	</center>
 	<br /><br />
     {{ content }}
 <span property="dc:creator" content="http://famer.github.io/about">Timur Tatarshaov</span>
