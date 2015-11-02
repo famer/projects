@@ -7,12 +7,12 @@ appstoreLink: https://itunes.apple.com/us/app/pro-places/id948166579
 weight: 2
 ---
 
-<link rel="stylesheet" href="/device.css/css/device.css">
+<link rel="stylesheet" href="http://famer.github.io/device.css/css/device.css">
 
 <div class="iphone-6 space-gray" style="font-size: 4px; vertical-align: middle;">
 	<video width="250" autoplay="" loop="">
-	  <source src="/device.css/background/videos/fnscreencast.mp4" type="video/mp4" />
-	   <img src="/device.css/background/screenshots/main_screen_detail.png" />
+	  <source src="http://famer.github.io/device.css/background/videos/fnscreencast.mp4" type="video/mp4" />
+	   <img src="http://famer.github.io/device.css/background/screenshots/main_screen_detail.png" />
 	</video>
 </div>
 
