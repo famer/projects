@@ -15,7 +15,7 @@ layout: default
   <h1 class="page-heading">iOS</h1>
 
   <ul class="page-list">
-    {% assign pages = site.pages | where:"type","app" | sort:"weight" | reverse %}
+    {% assign pages = site.pages | where:"type","app" | where:"tags","iOS" | sort:"weight" | reverse %}
     {% for page in pages %}
       <li>
 		
@@ -23,7 +23,7 @@ layout: default
 		<h2>
 		{{ page.title }}
 		</h2>
-		<img class="app-image" src="{{ site.baseurl }}/assets/icons/small_150/{{page.image}}"/>
+		<img class="app-image rounded" src="{{ site.baseurl }}/assets/icons/small_150/{{page.image}}"/>
 	</a>
 	<br />
 	<a href="{{ page.appstoreLink }}"><img style="width:135px;height:40px;" src="{{ site.baseurl }}/assets/App Store Badge/Download_on_the_App_Store_Badge_US-UK_135x40.png" /></a>
@@ -31,6 +31,19 @@ layout: default
     {% endfor %}
   </ul>
 <br />
+
+<h2>Windows Phone</h2>
+
+ <center>
+      <a class="page-link" href="https://www.microsoft.com/ru-ru/store/apps/Мега-поиск/9nblgggzkdwf">  
+        <h2>
+        Mega Finder
+        </h2>
+        <img class="app-image shadow" src="{{ site.baseurl }}/assets/icons/small_150/megafinder.png"/>
+      </a>
+      <br /><br />
+      <a href="https://www.microsoft.com/ru-ru/store/apps/Мега-поиск/9nblgggzkdwf"><img style="width:135px" src="{{ site.baseurl }}/assets/App Store Badge/English_Get_it_Win_10_InvariantCulture_Default.png" /></a>
+   </center>
 <div></div>
   <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
 
