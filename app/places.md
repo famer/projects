@@ -1,6 +1,6 @@
 ---
 title: (Pro) Places
-description: Places is navigation tool that lets you navigate to your places easily for everyone
+description: Places is navigation tool that lets you find a way to your places easily for everyone
 image: pro-places.png
 tags: iOS
 appstoreLink: https://itunes.apple.com/us/app/pro-places/id948166579 
@@ -14,8 +14,8 @@ weight: 2
 	  <source src="http://famer.github.io/device.css/background/videos/fnscreencast.mp4" type="video/mp4" />
 	   <img src="http://famer.github.io/device.css/background/screenshots/main_screen_detail.png" />
 	</video>
-</div>
-
+</div><br />  
+  
 ###Materials:
 
 * [Sources](https://github.com/famer/Pro-Places/) ([LICENSE](https://github.com/famer/Pro-Places/blob/public/LICENSE))
