@@ -9,7 +9,7 @@ layout: default
 	<a href="{{ site.baseurl }}/app/places.html">
 <img class="app-image rounded shadow" style="width:300px;"src="{{ site.baseurl }}/assets/icons/pro-places.png"/>
 </a><br /><br />
-<p style="width:500px">description: Places is navigation tool that lets you navigate to your places easily for everyone</p>
+<p style="width:500px">description: Places is navigation tool that lets you find a way to your places easily for everyone</p>
 </center>
 
   <h1 class="page-heading">iOS</h1>
@@ -19,7 +19,7 @@ layout: default
     {% for page in pages %}
       <li>
 		
-	<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+	<a class="page-link" href="{% if page.projectUrl %}{{ page.projectUrl }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}">
 		<h2>
 		{{ page.title }}
 		</h2>
