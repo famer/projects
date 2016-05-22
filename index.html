@@ -1,15 +1,20 @@
 ---
 layout: default
+currentProjectTitle: "Folder Note"
 ---
-
+{% assign currentProject = site.pages | where:"type","app" | where:"title",page.currentProjectTitle | first %}
+{% assign currentProjectUrl = '/' if currentProject.projectUrl %}
+{% capture currentProjectUrl %}
+{% if currentProject.projectUrl %}{{ currentProject.projectUrl }}{% else %}{{ currentProject.url | prepend: site.baseurl }}{% endif %}
+{% endcapture %}
 <div class="home">
 <h1 class="page-heading">Current project:</h1>
-<a href="{{ site.baseurl }}/app/places.html"><h2>Places</h2></a>
 <center>
-	<a href="{{ site.baseurl }}/app/places.html">
-<img class="app-image rounded shadow" style="width:300px;"src="{{ site.baseurl }}/assets/icons/pro-places.png"/>
+<a href="{{ currentProjectUrl }}"><h2>{{ currentProject.title }}</h2></a>
+	<a href="{{ currentProjectUrl }}">
+<img class="app-image rounded shadow" style="width:300px;"src="{{ site.baseurl }}/assets/icons/{{ currentProject.image }}"/>
 </a><br /><br />
-<p style="width:500px">description: Places is navigation tool that lets you find a way to your places easily for everyone</p>
+<p style="width:500px">description: {{ currentProject.description }}</p>
 </center>
 
   <h1 class="page-heading">iOS</h1>
