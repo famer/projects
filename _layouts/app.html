@@ -2,7 +2,11 @@
 layout: microformat
 ---
 {% capture image %}
-![{{ page.title }}]({{ site.baseurl }}/assets/icons/{{page.image}}){:.rounded .shadow width="300px"}
+{% if page.tags == "iOS" %}
+  ![{{ page.title }}]({{ site.baseurl }}/assets/icons/{{page.image}}){:.rounded .shadow width="300px"}
+{% elsif user.name == "Windows Phone" %}
+  ![{{ page.title }}]({{ site.baseurl }}/assets/icons/{{page.image}}){:.shadow}
+{% endif %}
 {% endcapture %}
 <div class="post" typeof="schema:Product gr:ProductOrServiceModel" itemid="#product"  about="{{ page.url }}">
 
