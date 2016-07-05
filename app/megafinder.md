@@ -6,10 +6,9 @@ tags: "Windows Phone"
 appstoreLink: https://www.microsoft.com/ru-ru/store/apps/Мега-поиск/9nblgggzkdwf
 ---
 
-Achivements:
+Demonstration[ru]:
 
-Positive people response:
-![lifetime]({{ site.baseurl }}/assets/Related/Spotty Finder/aLifetime.png)
+<iframe width="490" height="370" src="http://www.youtube.com/embed/eTgGgRVaTCU" frameborder="0" allowfullscreen="allowfullscreen" data-link="http://www.youtube.com/watch?v=eTgGgRVaTCU"></iframe>
 
 
 
