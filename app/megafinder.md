@@ -8,7 +8,7 @@ appstoreLink: https://www.microsoft.com/ru-ru/store/apps/Мега-поиск/9nb
 
 Demonstration[ru]:
 
-<iframe width="490" height="370" src="http://www.youtube.com/embed/eTgGgRVaTCU" frameborder="0" allowfullscreen="allowfullscreen" data-link="http://www.youtube.com/watch?v=eTgGgRVaTCU"></iframe>
+<iframe width="740" height="560" src="http://www.youtube.com/embed/eTgGgRVaTCU" frameborder="0" allowfullscreen="allowfullscreen" data-link="http://www.youtube.com/watch?v=eTgGgRVaTCU"></iframe><br />
 
 
 
