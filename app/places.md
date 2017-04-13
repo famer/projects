@@ -15,8 +15,8 @@ weight: 2
 	   <img src="http://famer.github.io/device.css/background/screenshots/main_screen_detail.png" />
 	</video>
 </div><br />  
-  
-###Materials:
+
+### Materials:
 
 * [Sources](https://github.com/famer/Pro-Places/) ([LICENSE](https://github.com/famer/Pro-Places/blob/public/LICENSE))
 * [Documentation (PDF 3.4Mb)](/downloads/english-places-docs.pdf)
