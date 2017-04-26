@@ -1,6 +1,6 @@
 ---
 layout: default
-currentProjectTitle: "(Pro) Places"
+currentProjectTitle: "Spotty Finder"
 ---
 {% assign currentProject = site.pages | where:"type","app" | where:"title",page.currentProjectTitle | first %}
 {% assign currentProjectUrl = '/' if currentProject.projectUrl %}
@@ -23,7 +23,7 @@ currentProjectTitle: "(Pro) Places"
     {% assign pages = site.pages | where:"type","app" | where:"tags","iOS" | sort:"weight" | reverse %}
     {% for page in pages %}
       <li>
-		
+
 	<a class="page-link" href="{% if page.projectUrl %}{{ page.projectUrl }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}">
 		<h2>
 		{{ page.title }}
@@ -35,35 +35,14 @@ currentProjectTitle: "(Pro) Places"
       </li>
     {% endfor %}
   </ul>
-<br />
 
-<h2 style="margin-top: 120px;">Windows Phone</h2>
-
-<ul class="page-list">
-    {% assign pages = site.pages | where:"type","app" | where:"tags","Windows Phone" | sort:"weight" | reverse %}
-    {% for page in pages %}
-      <li>
-		
-	<a class="page-link" href="{% if page.projectUrl %}{{ page.projectUrl }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}">
-		<h2>
-		{{ page.title }}
-		</h2>
-		<img class="app-image shadow" src="{{ site.baseurl }}/assets/icons/small_150/{{page.image}}"/>
-	</a>
-	<br />
-	<a href="{{ page.appstoreLink }}"><img style="width:135px" src="{{ site.baseurl }}/assets/App Store Badge/English_Get_it_Win_10_InvariantCulture_Default.png" /></a>
-      </li>
-    {% endfor %}
-   
-   </ul>
-   
    <br />
 
 <h2 style="margin-top: 120px;">Web</h2>
 
  <ul class="page-list">
    <li>
-      <a class="page-link" href="http://timurtatarshaov.me/device.css/">  
+      <a class="page-link" href="http://timurtatarshaov.me/device.css/">
         <h2>
         Device.css
         </h2>
@@ -73,6 +52,29 @@ currentProjectTitle: "(Pro) Places"
       <a href="http://timurtatarshaov.me/device.css/">Project page</a>
    </li>
    </ul>
+
+	 <br />
+
+	 <h2 style="margin-top: 120px;">Windows Phone</h2>
+
+	 <ul class="page-list">
+	     {% assign pages = site.pages | where:"type","app" | where:"tags","Windows Phone" | sort:"weight" | reverse %}
+	     {% for page in pages %}
+	       <li>
+
+	 	<a class="page-link" href="{% if page.projectUrl %}{{ page.projectUrl }}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}">
+	 		<h2>
+	 		{{ page.title }}
+	 		</h2>
+	 		<img class="app-image shadow" src="{{ site.baseurl }}/assets/icons/small_150/{{page.image}}"/>
+	 	</a>
+	 	<br />
+	 	<a href="{{ page.appstoreLink }}"><img style="width:135px" src="{{ site.baseurl }}/assets/App Store Badge/English_Get_it_Win_10_InvariantCulture_Default.png" /></a>
+	       </li>
+	     {% endfor %}
+
+	    </ul>
+			
 <div></div>
   <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
 

@@ -1,0 +1,32 @@
+#users_counter {
+	position: absolute;
+	z-index: 9999;
+	//color: #eee;
+	color: #333;
+}
+
+#auth, #unAuth, #play {
+	top: 20px;
+	right: 50px;
+	position: absolute;
+	z-index: 9999;
+	//color: #eee;
+	color: #333;
+}
+
+#unAuth, #auth {
+	display: none;
+	top: 40px;
+}
+
+#playStored {
+	top: 70px;
+}
+
+
+
+.marker {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
