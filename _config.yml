@@ -3,7 +3,7 @@ title: Timur T. Projects House
 #email: your-email@domain.com
 #description: Projects House
 baseurl: "/projects"
-url: "http://famer.github.io" # the base hostname & protocol for your site
+url: "https://famer.github.io" # the base hostname & protocol for your site
 #twitter_username: famer	
 github_username:  famer
 
