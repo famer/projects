@@ -5,5 +5,5 @@ image: folder-note.png
 tags: iOS
 appstoreLink: https://itunes.apple.com/us/app/folder-note/id961868178 
 weight: 5
-projectUrl: http://timurtatarshaov.me/Folder-Note/
+projectUrl: https://famer.github.io/Folder-Note/
 ---
